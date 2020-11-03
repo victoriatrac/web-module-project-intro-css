@@ -58,7 +58,7 @@
 }
 
 body {
-    background-color: #DDB9A3;
+    background-color:#ffffff;
     font-family: 'Roboto Mono', monospace;
     font-size: 1rem;
 }
@@ -67,9 +67,13 @@ body {
     text-align: center;
 }
 
+#top-nav {
+    margin: 3.5rem;
+}
+
 #header-cnt {
     padding-bottom: 60px;
-    padding-left:20px;
+    padding-left: 20px;
     padding-right: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -78,12 +82,19 @@ body {
 }
 
 #header-img {
-    flex: 25%;
+    flex: 40%;
+}
+
+#header-img img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
 }
 
 #header-txt {
-    flex: 75%;
+    flex: 60%;
 }
+
 /*
 #header-img {
     width: 25%;
@@ -113,16 +124,23 @@ body {
     }  
    } */
 
-#header-img img {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
+#tagline {
+    width: 70%;
+    margin: auto;
 }
 
 #footer {
     width: 100%;
-    height: 150px;
-    background-color: #F9E7DC;
+}
+
+#footer-img-cnt {
+    width: 99%;
+    height: auto;
+    max-height: 400px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
 }
 
 #footer-img {
@@ -130,9 +148,17 @@ body {
     height: auto;
 }
 
-.img {
-    width: 25%;
-    height: 25%;
+#footer-nav {
+    width: 100%;
+    background-color: #F9E7DC;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.icon {
+    width: 5rem;
+    height: 5rem;
+    padding: 20px;
 }
 
 /* Text selectors */
@@ -149,17 +175,17 @@ h1 {
 }
 
 h2 {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 /* Navigation button selectors */
 
 .flex-nav {
-    margin: 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
 }
 
 #btn-div-1 #btn-div-2 #btn-div-3 {
@@ -193,3 +219,26 @@ h2 {
     padding: 20px;
 }
 
+/* Main content selectors */
+
+#about {
+    background-color: #ddb9a3;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5rem;
+    color: white;
+}
+
+.narrow {
+    width: 40%;
+    margin: auto;
+}
+
+/* Screen size adjustment */
+
+@media screen and (max-width: 500px) {
+    .narrow {
+        width: 50%;
+    }
+}
