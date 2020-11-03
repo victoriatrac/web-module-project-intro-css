@@ -91,6 +91,12 @@ body {
     border-radius: 50%;
 }
 
+#header-img img:hover {
+    width: 240px;
+    height: 240px;
+    border: 5px dotted black;
+}
+
 #header-txt {
     flex: 60%;
 }
@@ -159,6 +165,12 @@ body {
     width: 5rem;
     height: 5rem;
     padding: 20px;
+    transition: 1s;
+}
+
+.icon:hover {
+    width: 6rem;
+    height: 6rem;
 }
 
 /* Text selectors */
@@ -174,9 +186,23 @@ h1 {
     padding: 20px;
 }
 
+h1:hover {
+    color: #ddb9a3;
+}
+
 h2 {
     margin-top: 1.5rem;
     margin-bottom: 1rem;
+}
+
+b {
+    font-weight:bold;
+    text-decoration: underline;
+}
+
+b:hover {
+    color: #ff754f;
+    text-decoration: underline;
 }
 
 /* Navigation button selectors */
@@ -202,6 +228,13 @@ h2 {
     font-size: 1rem;
     color: white;
     line-height: 1.2rem;
+}
+
+.btn:hover {
+    width: 150px;
+    height: 75px;
+    border: 3px solid black;
+    font-family: 'Chelsea Market', cursive;
 }
 
 #btn-plan {
