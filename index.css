@@ -75,14 +75,13 @@ body {
     padding-bottom: 60px;
     padding-left: 20px;
     padding-right: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    vertical-align: middle;
 }
 
 #header-img {
-    flex: 40%;
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
 }
 
 #header-img img {
@@ -98,37 +97,10 @@ body {
 }
 
 #header-txt {
-    flex: 60%;
+    width: 50%;
+    display: inline-block;
+    vertical-align: middle;
 }
-
-/*
-#header-img {
-    width: 25%;
-    float: left;
-}
-
-#header-txt {
-    width: 75%;
-}
-
-@media screen and (max-width: 600px) {
-    #header-cnt {
-        padding-bottom: 60px;
-        padding-left:20px;
-        padding-right: 20px;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-around;
-    }
-    #header-img {
-        flex: 25%;
-    }
-    
-    #header-txt {
-        flex: 75%;
-    }  
-   } */
 
 #tagline {
     width: 70%;
@@ -207,15 +179,10 @@ b:hover {
 
 /* Navigation button selectors */
 
-.flex-nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-}
-
 #btn-div-1 #btn-div-2 #btn-div-3 {
-    flex: 33.3%;
+    display: inline-block;
+    width: 100%;
+    border: 1px black solid;
 }
 
 .btn {
@@ -233,7 +200,7 @@ b:hover {
 .btn:hover {
     width: 150px;
     height: 75px;
-    border: 3px solid black;
+    border: 3px solid-om black;
     font-family: 'Chelsea Market', cursive;
 }
 
@@ -274,4 +241,3 @@ b:hover {
     .narrow {
         width: 60%;
     }
-}
