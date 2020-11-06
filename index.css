@@ -1,0 +1,277 @@
+/* CSS RESET */
+
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+    */
+
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed, 
+    figure, figcaption, footer, header, hgroup, 
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section {
+        display: block;
+    }
+    body {
+        line-height: 1;
+    }
+    ol, ul {
+        list-style: none;
+    }
+    blockquote, q {
+        quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+/* END CSS RESET */
+
+/* Main page selectors */
+
+* {
+    font-size: 62.5%;
+}
+
+body {
+    background-color:#ffffff;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem;
+}
+
+#container {
+    text-align: center;
+}
+
+#top-nav {
+    margin: 3.5rem;
+}
+
+#header-cnt {
+    padding-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#header-img {
+    flex: 40%;
+}
+
+#header-img img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+#header-img img:hover {
+    width: 240px;
+    height: 240px;
+    border: 5px dotted black;
+}
+
+#header-txt {
+    flex: 60%;
+}
+
+/*
+#header-img {
+    width: 25%;
+    float: left;
+}
+
+#header-txt {
+    width: 75%;
+}
+
+@media screen and (max-width: 600px) {
+    #header-cnt {
+        padding-bottom: 60px;
+        padding-left:20px;
+        padding-right: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+    #header-img {
+        flex: 25%;
+    }
+    
+    #header-txt {
+        flex: 75%;
+    }  
+   } */
+
+#tagline {
+    width: 70%;
+    margin: auto;
+}
+
+#footer {
+    width: 100%;
+}
+
+#footer-img-cnt {
+    width: 99%;
+    height: auto;
+    max-height: 400px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+}
+
+#footer-img {
+    width: 100%;
+    height: auto;
+}
+
+#footer-nav {
+    width: 100%;
+    background-color: #F9E7DC;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.icon {
+    width: 5rem;
+    height: 5rem;
+    padding: 20px;
+    transition: 1s;
+}
+
+.icon:hover {
+    width: 6rem;
+    height: 6rem;
+}
+
+/* Text selectors */
+
+p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-family: 'Chelsea Market', cursive;
+    font-size: 3rem;
+    padding: 20px;
+}
+
+h1:hover {
+    color: #ddb9a3;
+}
+
+h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+b {
+    font-weight:bold;
+    text-decoration: underline;
+}
+
+b:hover {
+    color: #ff754f;
+    text-decoration: underline;
+}
+
+/* Navigation button selectors */
+
+.flex-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#btn-div-1 #btn-div-2 #btn-div-3 {
+    flex: 33.3%;
+}
+
+.btn {
+    width: 150px;
+    height: 75px;
+    margin: 20px;
+    border-radius: 20px;
+    border: none;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem;
+    color: white;
+    line-height: 1.2rem;
+}
+
+.btn:hover {
+    width: 150px;
+    height: 75px;
+    border: 3px solid black;
+    font-family: 'Chelsea Market', cursive;
+}
+
+#btn-plan {
+    background-color: #FF764E;
+    padding: 20px;
+}
+
+#btn-learn {
+    background-color: #5ED3EB;
+    padding: 20px;
+}
+
+#btn-involved {
+    background-color: #FFCD69;
+    padding: 20px;
+}
+
+/* Main content selectors */
+
+#about {
+    background-color: #ddb9a3;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5rem;
+    color: white;
+}
+
+.narrow {
+    width: 40%;
+    margin: auto;
+}
+
+/* Screen size adjustment */
+
+@media screen and (max-width: 600px) {
+    .narrow {
+        width: 60%;
+    }
+}
